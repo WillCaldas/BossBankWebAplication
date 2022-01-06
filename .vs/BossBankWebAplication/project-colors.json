@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c5219d11-f83e-4e19-805b-4cafaafd9e7c": {
+      "ProjectGuid": "c5219d11-f83e-4e19-805b-4cafaafd9e7c",
+      "DisplayName": "BossBank.Data",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    },
+    "fdf104f0-b4ed-4e92-aa38-6c694330a7db": {
+      "ProjectGuid": "fdf104f0-b4ed-4e92-aa38-6c694330a7db",
+      "DisplayName": "BossBank.Web",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

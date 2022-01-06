@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BossBank.Data", "BossBank.Data\BossBank.Data.csproj", "{C5219D11-F83E-4E19-805B-4CAFAAFD9E7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BossBank.Web", "BossBank.Web\BossBank.Web.csproj", "{FDF104F0-B4ED-4E92-AA38-6C694330A7DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5219D11-F83E-4E19-805B-4CAFAAFD9E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5219D11-F83E-4E19-805B-4CAFAAFD9E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5219D11-F83E-4E19-805B-4CAFAAFD9E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5219D11-F83E-4E19-805B-4CAFAAFD9E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF104F0-B4ED-4E92-AA38-6C694330A7DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF104F0-B4ED-4E92-AA38-6C694330A7DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF104F0-B4ED-4E92-AA38-6C694330A7DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF104F0-B4ED-4E92-AA38-6C694330A7DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E68B583B-8C5C-4700-834D-1F148D70EAB8}
+	EndGlobalSection
+EndGlobal
