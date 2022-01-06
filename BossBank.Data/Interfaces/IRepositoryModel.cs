@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BossBank.Data.Interfaces
 {
-    internal interface IRepositoryModel<T> where T : class
+    public interface IRepositoryModel<T> where T : class
     {
         List<T> GetAll();
         T GetPk(params object[] varT);
@@ -15,12 +15,5 @@ namespace BossBank.Data.Interfaces
         void Delete(T item);
         void Delete(params object[] varT);
         void SaveChanges();
-    }
-}
-
-namespace BossBank.Data
-{
-    public class IReposirotyModel
-    {
     }
 }
