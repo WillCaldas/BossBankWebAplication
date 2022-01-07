@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BossBank.Data.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Clientes</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Cadastrar Cliente</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CpfCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProfCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RendaCliente)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CpfCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProfCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RendaCliente)
+            </td>
+            <td class="row">
+                <a asp-action="Edit" class="btn btn-success m-1" asp-route-id="@item.IdCliente">Alterar</a>
+                <a asp-action="Details" class="btn btn-info m-1" asp-route-id="@item.IdCliente">Detalhes</a>
+                <a asp-action="Delete" class="btn btn-danger m-1" asp-route-id="@item.IdCliente">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
