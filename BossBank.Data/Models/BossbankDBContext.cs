@@ -28,7 +28,7 @@ namespace BossBank.Data.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=MidPixelDesk\\sqldatabase;Initial Catalog=BossBankDB;User ID=sa;Password=MtFbwy1106");
+                optionsBuilder.UseSqlServer("Data Source=MIDPIXELDESK\\SQLDATABASE;Initial Catalog=BossBankDB;Integrated Security=True");
             }
         }
 
