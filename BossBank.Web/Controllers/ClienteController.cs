@@ -24,5 +24,18 @@ namespace BossBank.Web.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Create(Cliente objCliente)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            ServClient.RepCliente.Add(objCliente);
+
+            return RedirectToAction("Index");
+        }
     }
 }
