@@ -1,0 +1,95 @@
+﻿@model BossBank.Data.Models.Cliente
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md">
+        <form asp-action="Edit">
+
+            <div hidden class="form-group col-md">
+                            <label asp-for="IdCliente" class="control-label"></label>
+                            <input asp-for="IdCliente" class="form-control" />
+                        </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="card">
+                <div class="card-header">Informações Pessoais</div>
+                <div class="card-body row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label asp-for="NomeCliente" class="control-label"></label>
+                            <input asp-for="NomeCliente" class="form-control" />
+                            <span asp-validation-for="NomeCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label asp-for="CpfCliente" class="control-label"></label>
+                            <input asp-for="CpfCliente" class="form-control" />
+                            <span asp-validation-for="CpfCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-header">Informações Profissionais</div>
+                <div class="card-body row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label asp-for="ProfCliente" class="control-label"></label>
+                            <input asp-for="ProfCliente" class="form-control" />
+                            <span asp-validation-for="ProfCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label asp-for="RendaCliente" class="control-label"></label>
+                            <input asp-for="RendaCliente" class="form-control" />
+                            <span asp-validation-for="RendaCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-header">Endereço</div>
+                <div class="card-body row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label asp-for="EndCliente" class="control-label"></label>
+                            <input asp-for="EndCliente" class="form-control" />
+                            <span asp-validation-for="EndCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label asp-for="CidadeCliente" class="control-label"></label>
+                            <input asp-for="CidadeCliente" class="form-control" />
+                            <span asp-validation-for="CidadeCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <input type="submit" value="Atualizar" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

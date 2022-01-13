@@ -13,7 +13,7 @@ namespace BossBank.Web.Controllers
         {
             ServClient = new ClienteService();
         }
-        
+
         public IActionResult Index()
         {
             List<Cliente> listCliente = ServClient.RepCliente.GetAll();
@@ -42,6 +42,20 @@ namespace BossBank.Web.Controllers
         {
             Cliente thisCliente = ServClient.RepCliente.GetPk(id);
             return View(thisCliente);
+        }
+
+        public IActionResult Edit(int id)
+        {
+            Cliente thisCliente = ServClient.RepCliente.GetPk(id);
+            return View(thisCliente);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Cliente Model)
+        {
+            Cliente thisCliente = ServClient.RepCliente.Update(Model);
+            int id = thisCliente.IdCliente;
+            return RedirectToAction("Details", new { id });
         }
     }
 }
