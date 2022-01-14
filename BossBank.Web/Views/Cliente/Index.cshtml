@@ -46,7 +46,33 @@
                 <td class="row">
                     <a asp-action="Edit" class="btn btn-success m-1" asp-route-id="@item.IdCliente">Alterar</a>
                     <a asp-action="Details" class="btn btn-info m-1" asp-route-id="@item.IdCliente">Detalhes</a>
-                    <a asp-action="Delete" class="btn btn-danger m-1" asp-route-id="@item.IdCliente">Excluir</a>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger m-1" data-toggle="modal" data-target="#DeleteModal-@item.IdCliente">
+                        Excluir
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="DeleteModal-@item.IdCliente" tabindex="-1" role="dialog" aria-labelledby="DeleteModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="DeleteModalLabel">Excluir Cliente</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Deseja realmente excluir o Cliente @item.NomeCliente ?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.IdCliente">Sim</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </td>
             </tr>
         }

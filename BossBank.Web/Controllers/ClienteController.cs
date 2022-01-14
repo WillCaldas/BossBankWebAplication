@@ -57,5 +57,11 @@ namespace BossBank.Web.Controllers
             int id = thisCliente.IdCliente;
             return RedirectToAction("Details", new { id });
         }
+
+        public IActionResult Delete(int id)
+        {
+            ServClient.RepCliente.Delete(id);
+            return RedirectToAction("Index");
+        }
     }
 }
