@@ -38,7 +38,19 @@ namespace BossBank.Web.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult Edit(int id)
+        {
+            Colaborador thisColab = ServColaborador.RepColaborador.GetPk(id);
+            return View(thisColab);
+        }
 
+        [HttpPost]
+        public IActionResult Edit(Colaborador Model)
+        {
+            Colaborador thisColab = ServColaborador.RepColaborador.Update(Model);
+            int id = thisColab.IdColab;
+            return RedirectToAction("Details", new { id });
+        }
 
         public IActionResult Details(int id)
         {
