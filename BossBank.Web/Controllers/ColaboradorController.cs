@@ -19,5 +19,23 @@ namespace BossBank.Web.Controllers
             List<Colaborador> listColaborador = ServColaborador.RepColaborador.GetAll();
             return View(listColaborador);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Colaborador ObjColaborador)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            ServColaborador.RepColaborador.Add(ObjColaborador);
+
+            return RedirectToAction("Index");
+        }
     }
 }
