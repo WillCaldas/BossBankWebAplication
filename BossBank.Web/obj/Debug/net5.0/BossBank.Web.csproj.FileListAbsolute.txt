@@ -152,3 +152,4 @@ C:\Users\Willian Caldas\Projetos Visual Studio\Pessoal\BossBankWebAplication\Bos
 C:\Users\Willian Caldas\Projetos Visual Studio\Pessoal\BossBankWebAplication\BossBank.Web\obj\Debug\net5.0\Razor\Views\Cliente\Edit.cshtml.g.cs
 C:\Users\Willian Caldas\Projetos Visual Studio\Pessoal\BossBankWebAplication\BossBank.Web\obj\Debug\net5.0\Razor\Views\Colaborador\Index.cshtml.g.cs
 C:\Users\Willian Caldas\Projetos Visual Studio\Pessoal\BossBankWebAplication\BossBank.Web\obj\Debug\net5.0\Razor\Views\Colaborador\Create.cshtml.g.cs
+C:\Users\Willian Caldas\Projetos Visual Studio\Pessoal\BossBankWebAplication\BossBank.Web\obj\Debug\net5.0\Razor\Views\Colaborador\Details.cshtml.g.cs
