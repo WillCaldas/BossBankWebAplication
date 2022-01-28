@@ -1,10 +1,5 @@
-﻿using BossBank.Data.Interfaces;
-using BossBank.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BossBank.Data.Entities;
+using BossBank.Data.Interfaces;
 
 namespace BossBank.Data.Repositories
 {

@@ -15,7 +15,12 @@
       "ProjectGuid": "fdf104f0-b4ed-4e92-aa38-6c694330a7db",
       "DisplayName": "BossBank.Web",
       "ColorIndex": 1
+    },
+    "3642f56c-5d8b-40f0-9349-73cb70d2a4b5": {
+      "ProjectGuid": "3642f56c-5d8b-40f0-9349-73cb70d2a4b5",
+      "DisplayName": "BossBank.DataBase",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

@@ -1,23 +1,21 @@
-﻿using BossBank.Data.Interfaces;
-using BossBank.Data.Models;
+﻿using BossBank.Data.Context;
+using BossBank.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BossBank.Data.Repositories
 {
     public class RepositoryBase<T> : IRepositoryModel<T>, IDisposable where T : class
     {
-        protected BossbankDBContext _BossBankContexto;
+        protected BossBankDbContext _BossBankContexto;
         public bool _SaveChanges = true;
 
         public RepositoryBase(bool saveChanges = true)
         {
             _SaveChanges = saveChanges;
-            _BossBankContexto = new BossbankDBContext();
+            _BossBankContexto = new BossBankDbContext();
         }
 
         public T Add(T item)
@@ -51,6 +49,20 @@ namespace BossBank.Data.Repositories
         public void Dispose()
         {
             _BossBankContexto.Dispose();
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (_BossBankContexto != null)
+                {
+                    _BossBankContexto.Dispose();
+                    _BossBankContexto = null;
+                }
+            }
         }
 
         public List<T> GetAll()
