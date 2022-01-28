@@ -10,7 +10,7 @@ namespace BossBank.Data.Entities
         [Key]
         [Column("id_cliente")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string IdCliente { get; set; }
+        public int IdCliente { get; set; }
 
         [Required]
         [Column("nome_cliente")]

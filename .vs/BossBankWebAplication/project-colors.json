@@ -20,7 +20,17 @@
       "ProjectGuid": "3642f56c-5d8b-40f0-9349-73cb70d2a4b5",
       "DisplayName": "BossBank.DataBase",
       "ColorIndex": 2
+    },
+    "2b851b08-724a-4858-adee-ae64e315a73b": {
+      "ProjectGuid": "2b851b08-724a-4858-adee-ae64e315a73b",
+      "DisplayName": "BossBank.Web",
+      "ColorIndex": 3
+    },
+    "d3a81549-005e-4dd5-a682-e09fdbe9618f": {
+      "ProjectGuid": "d3a81549-005e-4dd5-a682-e09fdbe9618f",
+      "DisplayName": "BossBank.Services",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }

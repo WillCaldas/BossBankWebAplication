@@ -25,6 +25,7 @@ namespace BossBank.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            
             services.AddDbContext<BossBankDbContext>(options => options.UseSqlServer("Data Source=MIDPIXELDESK\\SQLDATABASE;Initial Catalog=BossBankNewDB;Integrated Security=True"));
         }
 
