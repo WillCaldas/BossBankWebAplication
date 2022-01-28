@@ -1,0 +1,120 @@
+﻿@model BossBank.Data.Entities.Cliente
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Cadastrar novo Cliente</h1>
+
+<h4>Insira as informações</h4>
+<hr />
+<div class="row">
+    <div class="col">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="card">
+                <div class="card-header">Informações Pessoais</div>
+                <div class="card-body row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label asp-for="NomeCliente" class="control-label"></label>
+                            <input asp-for="NomeCliente" class="form-control" />
+                            <span asp-validation-for="NomeCliente" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TelCliente" class="control-label"></label>
+                            <input asp-for="TelCliente" class="form-control" />
+                            <span asp-validation-for="TelCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="CpfCliente" class="control-label"></label>
+                            <input asp-for="CpfCliente" class="form-control" />
+                            <span asp-validation-for="CpfCliente" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="EmailCliente" class="control-label"></label>
+                            <input asp-for="EmailCliente" class="form-control" />
+                            <span asp-validation-for="EmailCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">Informações Profisionais</div>
+                <div class="card-body row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label asp-for="EmpreCliente" class="control-label"></label>
+                            <input asp-for="EmpreCliente" class="form-control" />
+                            <span asp-validation-for="EmpreCliente" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="FunCliente" class="control-label"></label>
+                            <input asp-for="FunCliente" class="form-control" />
+                            <span asp-validation-for="FunCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="CNPJCliente" class="control-label"></label>
+                            <input asp-for="CNPJCliente" class="form-control" />
+                            <span asp-validation-for="CNPJCliente" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SalarioCliente" class="control-label"></label>
+                            <input asp-for="SalarioCliente" class="form-control" />
+                            <span asp-validation-for="SalarioCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">Informações de Endereço</div>
+                <div class="card-body row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label asp-for="RuaCliente" class="control-label"></label>
+                            <input asp-for="RuaCliente" class="form-control" />
+                            <span asp-validation-for="RuaCliente" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="CidadeCliente" class="control-label"></label>
+                            <input asp-for="CidadeCliente" class="form-control" />
+                            <span asp-validation-for="CidadeCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="BairroCliente" class="control-label"></label>
+                            <input asp-for="BairroCliente" class="form-control" />
+                            <span asp-validation-for="BairroCliente" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="EstadoCliente" class="control-label"></label>
+                            <input asp-for="EstadoCliente" class="form-control" />
+                            <span asp-validation-for="EstadoCliente" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-danger">Voltar para Lista</a>
+</div>
+ 
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

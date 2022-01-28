@@ -18,10 +18,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BossBank.Data\BossBank.Data.csproj" />
+    <ProjectReference Include="..\BossBank.Services\BossBank.Services.csproj" />
   </ItemGroup>
 
 </Project>

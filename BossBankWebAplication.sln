@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BossBank.Data", "BossBank.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BossBank.Web", "BossBank.Web\BossBank.Web.csproj", "{2B851B08-724A-4858-ADEE-AE64E315A73B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BossBank.Services", "BossBank.Services\BossBank.Services.csproj", "{D3A81549-005E-4DD5-A682-E09FDBE9618F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2B851B08-724A-4858-ADEE-AE64E315A73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B851B08-724A-4858-ADEE-AE64E315A73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B851B08-724A-4858-ADEE-AE64E315A73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A81549-005E-4DD5-A682-E09FDBE9618F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A81549-005E-4DD5-A682-E09FDBE9618F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A81549-005E-4DD5-A682-E09FDBE9618F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A81549-005E-4DD5-A682-E09FDBE9618F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
