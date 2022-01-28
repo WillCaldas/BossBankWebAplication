@@ -153,3 +153,4 @@ C:\Users\Willian Caldas\Projetos Visual Studio\Pessoal\BossBankWebAplication\Bos
 C:\Users\Willian Caldas\Projetos Visual Studio\Pessoal\BossBankWebAplication\BossBank.Web\bin\Debug\net5.0\BossBank.Services.pdb
 C:\Users\Willian Caldas\Projetos Visual Studio\Pessoal\BossBankWebAplication\BossBank.Web\obj\Debug\net5.0\Razor\Views\Clientes\Create.cshtml.g.cs
 C:\Users\Willian Caldas\Projetos Visual Studio\Pessoal\BossBankWebAplication\BossBank.Web\obj\Debug\net5.0\Razor\Views\Clientes\Details.cshtml.g.cs
+C:\Users\Willian Caldas\Projetos Visual Studio\Pessoal\BossBankWebAplication\BossBank.Web\obj\Debug\net5.0\Razor\Views\Clientes\Edit.cshtml.g.cs

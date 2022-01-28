@@ -43,5 +43,25 @@ namespace BossBank.Web.Controllers
             Cliente thisCliente = ServCliente.RepCliente.GetPk(id);
             return View(thisCliente);
         }
+
+        public IActionResult Edit(int id)
+        {
+            Cliente thisCliente = ServCliente.RepCliente.GetPk(id);
+            return View(thisCliente);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Cliente Model)
+        {
+            Cliente thisCliente = ServCliente.RepCliente.Update(Model);
+            int id = thisCliente.IdCliente;
+            return RedirectToAction("Details", new { id });
+        }
+
+        public IActionResult Delete(int id)
+        {
+            ServCliente.RepCliente.Delete(id);
+            return RedirectToAction("Index");
+        }
     }
 }

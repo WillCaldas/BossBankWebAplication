@@ -24,7 +24,9 @@ namespace BossBank.Data.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+
             //optionsBuilder.UseSqlServer(b => b.MigrationsAssembly("BossBank.Web"));
+
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer("Data Source=MIDPIXELDESK\\SQLDATABASE;Initial Catalog=BossBankNewDB;Integrated Security=True");
