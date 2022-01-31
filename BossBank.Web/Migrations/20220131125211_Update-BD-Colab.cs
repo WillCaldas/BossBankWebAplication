@@ -2,7 +2,7 @@
 
 namespace BossBank.Web.Migrations
 {
-    public partial class BossBankDbUpdate : Migration
+    public partial class UpdateBDColab : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -34,7 +34,8 @@ namespace BossBank.Web.Migrations
                 name: "Colaborador",
                 columns: table => new
                 {
-                    id_colab = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    id_colab = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     nome_colab = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     cpf_colab = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     cargo_colab = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
@@ -54,7 +55,7 @@ namespace BossBank.Web.Migrations
                     conta_cc = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     agencia_cc = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     TitularCcIdCliente = table.Column<int>(type: "int", nullable: true),
-                    GerenteCcIdColab = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    GerenteCcIdColab = table.Column<int>(type: "int", nullable: true),
                     saldo_cc = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     credito_cc = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true)
                 },

@@ -29,7 +29,7 @@ namespace BossBank.Data.Context
 
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=MIDPIXELDESK\\SQLDATABASE;Initial Catalog=BossBankNewDB;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=MIDPIXELDESK\\SQLDATABASE;Initial Catalog=BossBankDB;Integrated Security=True");
             }
         }
 

@@ -12,7 +12,8 @@ namespace BossBank.Data.Entities
         [Key]
         [Column("id_colab")]
         [DisplayName("ID")]
-        public string IdColab { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int IdColab { get; set; }
 
         [Required]
         [Column("nome_colab")]

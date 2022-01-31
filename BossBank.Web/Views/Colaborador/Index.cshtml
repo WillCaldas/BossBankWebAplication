@@ -1,0 +1,103 @@
+﻿@model IEnumerable<BossBank.Data.Entities.Colaborador>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Cadastrar Novo</a>
+</p>
+<table id="table_id" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeColab)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CpfColab)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CargoColab)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SetorColab)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GestorColab)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalarioColab)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeColab)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CpfColab)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CargoColab)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SetorColab)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GestorColab)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SalarioColab)
+                </td>
+                <td class="row">
+                    <a asp-action="Edit" class="btn btn-success m-1" asp-route-id="@item.IdColab">Editar</a>
+                    <a asp-action="Details" class="btn btn-info m-1" asp-route-id="@item.IdColab">Detalhes</a>
+
+                    <button type="button" class="btn btn-danger m-1" data-toggle="modal" data-target="#DeleteModal-@item.IdColab">
+                        Excluir
+                    </button>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="DeleteModal-@item.IdColab" tabindex="-1" role="dialog" aria-labelledby="DeleteModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="DeleteModalLabel">Excluir Colaborador</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Deseja realmente excluir o Colaborador @item.NomeColab ?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.IdColab">Sim</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+<script>
+    $(document).ready( function () {
+        $('#table_id').DataTable({
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json"
+            }
+        });
+    } );
+</script>
+}

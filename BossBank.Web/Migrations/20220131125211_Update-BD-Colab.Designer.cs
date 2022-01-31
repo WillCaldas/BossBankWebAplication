@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BossBank.Web.Migrations
 {
     [DbContext(typeof(BossBankDbContext))]
-    [Migration("20220128192838_BossBankDb-Update")]
-    partial class BossBankDbUpdate
+    [Migration("20220131125211_Update-BD-Colab")]
+    partial class UpdateBDColab
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -108,9 +108,11 @@ namespace BossBank.Web.Migrations
 
             modelBuilder.Entity("BossBank.Data.Entities.Colaborador", b =>
                 {
-                    b.Property<string>("IdColab")
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("id_colab");
+                    b.Property<int>("IdColab")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id_colab")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("CargoColab")
                         .IsRequired()
@@ -168,8 +170,8 @@ namespace BossBank.Web.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("credito_cc");
 
-                    b.Property<string>("GerenteCcIdColab")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int?>("GerenteCcIdColab")
+                        .HasColumnType("int");
 
                     b.Property<string>("SaldoCc")
                         .IsRequired()

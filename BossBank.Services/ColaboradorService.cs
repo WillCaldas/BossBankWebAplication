@@ -9,11 +9,11 @@ namespace BossBank.Data.Services
 {
     public class ColaboradorService
     {
-        public RepositoryColaborador RepColaborador { get; set; }
+        public RepositoryColaborador RepColab { get; set; }
 
         public ColaboradorService()
         {
-            RepColaborador = new RepositoryColaborador();
+            RepColab = new RepositoryColaborador();
         }
     }
 }

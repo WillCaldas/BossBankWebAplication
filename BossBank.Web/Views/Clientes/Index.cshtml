@@ -7,9 +7,9 @@
 <h1>Clientes</h1>
 
 <p>
-    <a class="btn btn-primary" asp-action="Create">Cadastrar Cliente</a>
+    <a class="btn btn-primary" asp-action="Create">Cadastrar Novo</a>
 </p>
-<table id="listTable" class="table">
+<table id="table_id" class="table">
     <thead>
         <tr>
             <th>
@@ -81,7 +81,11 @@
 @section Scripts{
 <script>
     $(document).ready( function () {
-        $('#listTable').DataTable();
+        $('#table_id').DataTable({
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json"
+            }
+        });
     } );
 </script>
 }

@@ -26,7 +26,7 @@ namespace BossBank.Web
         {
             services.AddControllersWithViews();
             
-            services.AddDbContext<BossBankDbContext>(options => options.UseSqlServer("Data Source=MIDPIXELDESK\\SQLDATABASE;Initial Catalog=BossBankNewDB;Integrated Security=True"));
+            services.AddDbContext<BossBankDbContext>(options => options.UseSqlServer("Data Source=MIDPIXELDESK\\SQLDATABASE;Initial Catalog=BossBankDB;Integrated Security=True"));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -1,0 +1,81 @@
+﻿@model BossBank.Data.Entities.Colaborador
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Colaborador</h1>
+
+<h4>Insira as informações</h4>
+<hr />
+<div class="row">
+    <div class="col">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="card">
+                <div class="card-header">Informações Pessoais</div>
+                <div class="card-body row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label asp-for="NomeColab" class="control-label"></label>
+                            <input asp-for="NomeColab" class="form-control" />
+                            <span asp-validation-for="NomeColab" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="CpfColab" class="control-label"></label>
+                            <input asp-for="CpfColab" class="form-control" />
+                            <span asp-validation-for="CpfColab" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">Informações Profisionais</div>
+                <div class="card-body row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label asp-for="CargoColab" class="control-label"></label>
+                            <input asp-for="CargoColab" class="form-control" />
+                            <span asp-validation-for="CargoColab" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="GestorColab" class="control-label"></label>
+                            <input asp-for="GestorColab" class="form-control" />
+                            <span asp-validation-for="GestorColab" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="SetorColab" class="control-label"></label>
+                            <input asp-for="SetorColab" class="form-control" />
+                            <span asp-validation-for="SetorColab" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SalarioColab" class="control-label"></label>
+                            <input asp-for="SalarioColab" class="form-control" />
+                            <span asp-validation-for="SalarioColab" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-danger">Voltar</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
+
