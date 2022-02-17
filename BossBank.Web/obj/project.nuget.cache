@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OBgo19+uMQngmqjrfjfEyJOYij05ltSE14s/FBXonH+kJZMothVEXaf0i5+dYQy9cpm9G1IPoefxC8vvfFwPSg==",
+  "dgSpecHash": "BhHNkwUeNxycSF8hZg7eH2WTkhoNuu5Y3lFhAzmCABvVrT4cDJFCtUk5pLnT9+5eEIXCepT2pyFE0igWXovRtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Willian Caldas\\Projetos Visual Studio\\Pessoal\\BossBankWebAplication\\BossBank.Web\\BossBank.Web.csproj",
+  "projectFilePath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Web\\BossBank.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Willian Caldas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Willian Caldas\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",

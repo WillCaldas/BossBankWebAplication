@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tM/VOkdwRuxIWVye16tTZGtyn+RssGpZzxiaV1MeRYu0Fgo1W0sj+7+/7d0HtJZY/wHc4UFwB0gtf5A5zaeIHQ==",
+  "dgSpecHash": "JU52xFXgzPP37WJDYR+Qy0uojcGMMo/atmbjtKh5SgbEZehslRSrfbqUcIVWIuZfRd/I+HGKVVNuefns2VYA8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Willian Caldas\\Projetos Visual Studio\\Pessoal\\BossBankWebAplication\\BossBank.Services\\BossBank.Services.csproj",
+  "projectFilePath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Services\\BossBank.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Willian Caldas\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Willian Caldas\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
@@ -143,7 +143,10 @@
     "C:\\Users\\Willian Caldas\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Willian Caldas\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Willian Caldas\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Willian Caldas\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Willian Caldas\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Willian Caldas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Willian Caldas\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Willian Caldas\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
