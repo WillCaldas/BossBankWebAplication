@@ -1,4 +1,5 @@
-﻿using BossBank.Data.Repositories;
+﻿using BossBank.Data.Context;
+using BossBank.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,9 @@ namespace BossBank.Data.Services
     {
         public RepositoryColaborador RepColab { get; set; }
 
-        public ColaboradorService()
+        public ColaboradorService(BossBankDbContext context)
         {
-            RepColab = new RepositoryColaborador();
+            RepColab = new RepositoryColaborador(context);
         }
     }
 }

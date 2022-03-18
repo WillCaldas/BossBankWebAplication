@@ -1,4 +1,5 @@
-﻿using BossBank.Data.Entities;
+﻿using BossBank.Data.Context;
+using BossBank.Data.Entities;
 using BossBank.Data.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -9,9 +10,9 @@ namespace BossBank.Web.Controllers
     {
         private ColaboradorService ServColab { get; set; }
 
-        public ColaboradorController()
+        public ColaboradorController(BossBankDbContext context)
         {
-            ServColab = new ColaboradorService();
+            ServColab = new ColaboradorService(context);
         }
 
         public IActionResult Index()

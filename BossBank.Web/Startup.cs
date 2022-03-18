@@ -26,7 +26,9 @@ namespace BossBank.Web
         {
             services.AddControllersWithViews();
             
-            services.AddDbContext<BossBankDbContext>(options => options.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=BossBankDB; Integrated Security=True"));
+            services.AddDbContext<BossBankDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("DataBaseConnection")));
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -34,7 +36,6 @@ namespace BossBank.Web
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
             }
             else
             {

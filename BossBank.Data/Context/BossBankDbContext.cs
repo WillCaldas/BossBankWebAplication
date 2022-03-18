@@ -9,12 +9,7 @@ namespace BossBank.Data.Context
 {
     public partial class BossBankDbContext : DbContext
     {
-        public BossBankDbContext()
-        {
-        }
-
-        public BossBankDbContext(DbContextOptions<BossBankDbContext> options)
-            : base(options)
+        public BossBankDbContext(DbContextOptions<BossBankDbContext> options) : base(options)
         {
         }
 
@@ -24,13 +19,7 @@ namespace BossBank.Data.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
-            //optionsBuilder.UseSqlServer(b => b.MigrationsAssembly("BossBank.Web"));
-
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=BossBankDB; Integrated Security=True");
-            }
+            optionsBuilder.UseSqlite(b => b.MigrationsAssembly("BossBank.Web"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

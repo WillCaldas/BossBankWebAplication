@@ -1,4 +1,5 @@
-﻿using BossBank.Data.Repositories;
+﻿using BossBank.Data.Context;
+using BossBank.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,9 @@ namespace BossBank.Data.Services
     {
         public RepositoryCliente RepCliente { get; set; }
 
-        public ClienteService()
+        public ClienteService(BossBankDbContext context)
         {
-            RepCliente = new RepositoryCliente();
+            RepCliente = new RepositoryCliente(context);
         }
     }
 }

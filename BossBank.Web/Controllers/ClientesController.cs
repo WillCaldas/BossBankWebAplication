@@ -1,4 +1,5 @@
-﻿using BossBank.Data.Entities;
+﻿using BossBank.Data.Context;
+using BossBank.Data.Entities;
 using BossBank.Data.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -9,9 +10,9 @@ namespace BossBank.Web.Controllers
     {
         private ClienteService ServCliente { get; set; }
 
-        public ClientesController()
+        public ClientesController(BossBankDbContext context)
         {
-            ServCliente = new ClienteService();
+            ServCliente = new ClienteService(context);
         }
 
         public IActionResult Index()

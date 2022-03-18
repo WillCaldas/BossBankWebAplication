@@ -12,10 +12,10 @@ namespace BossBank.Data.Repositories
         protected BossBankDbContext _BossBankContexto;
         public bool _SaveChanges = true;
 
-        public RepositoryBase(bool saveChanges = true)
+        public RepositoryBase(BossBankDbContext context, bool saveChanges = true)
         {
             _SaveChanges = saveChanges;
-            _BossBankContexto = new BossBankDbContext();
+            _BossBankContexto = context;
         }
 
         public T Add(T item)
