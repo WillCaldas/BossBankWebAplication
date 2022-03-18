@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Web\\BossBank.Web.csproj": {}
+    "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Web\\BossBank.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Data\\BossBank.Data.csproj": {
+    "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Data\\BossBank.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Data\\BossBank.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Data\\BossBank.Data.csproj",
         "projectName": "BossBank.Data",
-        "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Data\\BossBank.Data.csproj",
+        "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Data\\BossBank.Data.csproj",
         "packagesPath": "C:\\Users\\Willian Caldas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Data\\obj\\",
+        "outputPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Willian Caldas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,37 +83,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Services\\BossBank.Services.csproj": {
+    "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Services\\BossBank.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Services\\BossBank.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Services\\BossBank.Services.csproj",
         "projectName": "BossBank.Services",
-        "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Services\\BossBank.Services.csproj",
+        "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Services\\BossBank.Services.csproj",
         "packagesPath": "C:\\Users\\Willian Caldas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Services\\obj\\",
+        "outputPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Willian Caldas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,8 +116,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Data\\BossBank.Data.csproj": {
-                "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Data\\BossBank.Data.csproj"
+              "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Data\\BossBank.Data.csproj": {
+                "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Data\\BossBank.Data.csproj"
               }
             }
           }
@@ -155,37 +141,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Web\\BossBank.Web.csproj": {
+    "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Web\\BossBank.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Web\\BossBank.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Web\\BossBank.Web.csproj",
         "projectName": "BossBank.Web",
-        "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Web\\BossBank.Web.csproj",
+        "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Web\\BossBank.Web.csproj",
         "packagesPath": "C:\\Users\\Willian Caldas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Web\\obj\\",
+        "outputPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Willian Caldas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -202,11 +174,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Data\\BossBank.Data.csproj": {
-                "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Data\\BossBank.Data.csproj"
+              "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Data\\BossBank.Data.csproj": {
+                "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Data\\BossBank.Data.csproj"
               },
-              "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Services\\BossBank.Services.csproj": {
-                "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Pessoal\\BossBank Web Aplication\\BossBank.Services\\BossBank.Services.csproj"
+              "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Services\\BossBank.Services.csproj": {
+                "projectPath": "C:\\Users\\Willian Caldas\\Visual Studio Projetos\\Repositório - Projetos\\BossBankWebAplication\\BossBank.Services\\BossBank.Services.csproj"
               }
             }
           }
@@ -276,7 +248,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
