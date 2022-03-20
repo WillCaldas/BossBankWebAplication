@@ -6,7 +6,7 @@ namespace BossBank.Data.Repositories
 {
     public class RepositoryCliente : RepositoryBase<Cliente>, IRepositoryCliente
     {
-        public RepositoryCliente(BossBankDbContext context, bool saveChanges = true) : base(context, saveChanges)
+        public RepositoryCliente(BossBankDbContext context) : base(context)
         {
 
         }

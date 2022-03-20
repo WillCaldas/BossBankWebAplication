@@ -38,7 +38,7 @@ namespace BossBank.Web.Controllers
         public IActionResult SearchCliente(string term)
         {
             var list = _cliente.GetAll();
-            var listName = list.Select(var => var.NomeCliente).ToList();
+            var listName = list.Select(var => var.ClienteNome).ToList();
             var filtro = listName.Where(p => p.Contains(term, StringComparison.CurrentCultureIgnoreCase));
 
             return Json(filtro);
@@ -47,7 +47,7 @@ namespace BossBank.Web.Controllers
         public IActionResult SearchColab(string term)
         {
             var list = _colaborador.GetAll();
-            var listColab = list.Select(var => var.NomeColab).ToList();
+            var listColab = list.Select(var => var.ColaboradorNome).ToList();
             var filtro = listColab.Where(p => p.Contains(term, StringComparison.CurrentCultureIgnoreCase));
 
             return Json(filtro);

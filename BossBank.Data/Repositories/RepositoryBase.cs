@@ -10,11 +10,11 @@ namespace BossBank.Data.Repositories
     public class RepositoryBase<T> : IRepositoryModel<T>, IDisposable where T : class
     {
         protected BossBankDbContext _BossBankContexto;
-        public bool _SaveChanges = true;
+        
 
-        public RepositoryBase(BossBankDbContext context, bool saveChanges = true)
+        public RepositoryBase(BossBankDbContext context)
         {
-            _SaveChanges = saveChanges;
+            
             _BossBankContexto = context;
         }
 
@@ -22,10 +22,9 @@ namespace BossBank.Data.Repositories
         {
             _BossBankContexto.Set<T>().Add(item);
 
-            if (_SaveChanges)
-            {
+            
                 _BossBankContexto.SaveChanges();
-            }
+            
 
             return item;
         }
@@ -34,10 +33,7 @@ namespace BossBank.Data.Repositories
         {
             _BossBankContexto.Set<T>().Remove(item);
 
-            if (_SaveChanges)
-            {
-                _BossBankContexto.SaveChanges();
-            }
+            _BossBankContexto.SaveChanges();
         }
 
         public void Delete(params object[] varT)
@@ -84,10 +80,7 @@ namespace BossBank.Data.Repositories
         {
             _BossBankContexto.Entry(item).State = EntityState.Modified;
 
-            if (_SaveChanges)
-            {
-                _BossBankContexto.SaveChanges();
-            }
+            _BossBankContexto.SaveChanges();
             return item;
         }
     }

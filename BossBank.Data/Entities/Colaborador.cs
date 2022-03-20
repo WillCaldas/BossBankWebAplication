@@ -7,49 +7,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BossBank.Data.Entities
 {
-    public partial class Colaborador
+    public class Colaborador
     {
-        [Key]
-        [Column("id_colab")]
-        [DisplayName("ID")]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdColab { get; set; }
-
-        [Required]
-        [Column("nome_colab")]
-        [StringLength(100)]
-        [DisplayName("Nome")]
-        public string NomeColab { get; set; }
-
-        [Required]
-        [Column("cpf_colab")]
-        [StringLength(50)]
-        [DisplayName("CPF")]
-        public string CpfColab { get; set; }
-
-        [Required]
-        [Column("cargo_colab")]
-        [StringLength(50)]
-        [DisplayName("Função")]
-        public string CargoColab { get; set; }
-
-        [Required]
-        [Column("setor_colab")]
-        [StringLength(50)]
-        [DisplayName("Setor")]
-        public string SetorColab { get; set; }
-
-        [Required]
-        [Column("gestor_colab")]
-        [StringLength(50)]
-        [DisplayName("Gestor")]
-        public string GestorColab { get; set; }
-
-        [Required]
-        [Column("salario_colab")]
-        [StringLength(100)]
-        [DisplayName("Salário")]
-        public string SalarioColab { get; set; }
+        public int ColaboradorId { get; set; }
+        public string ColaboradorNome { get; set; }
+        public string ColaboradorCPF { get; set; }
+        public string ColaboradorCargo { get; set; }
+        public string ColaboradorSetor { get; set; }
+        public string ColaboradorGestor { get; set; }
+        public string ColaboradorSalario { get; set; }
 
     }
 }

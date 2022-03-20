@@ -6,7 +6,7 @@ namespace BossBank.Data.Repositories
 {
     public class RepositoryContaCorrente : RepositoryBase<ContaCorrente>, IRepositoryContaCorrente
     {
-        public RepositoryContaCorrente(BossBankDbContext context, bool saveChanges = true) : base(context, saveChanges)
+        public RepositoryContaCorrente(BossBankDbContext context) : base(context)
         {
 
         }

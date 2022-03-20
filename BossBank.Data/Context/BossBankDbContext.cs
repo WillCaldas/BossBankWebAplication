@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace BossBank.Data.Context
 {
-    public partial class BossBankDbContext : DbContext
+    public class BossBankDbContext : DbContext
     {
         public BossBankDbContext(DbContextOptions<BossBankDbContext> options) : base(options)
         {
@@ -24,8 +24,6 @@ namespace BossBank.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
         }
-
     }
 }

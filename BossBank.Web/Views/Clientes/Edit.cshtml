@@ -12,32 +12,32 @@
     <div class="col">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdCliente" />
+            <input type="hidden" asp-for="ClienteID" />
             <div class="card">
                 <div class="card-header">Informações Pessoais</div>
                 <div class="card-body row">
                     <div class="col-md">
                         <div class="form-group">
-                            <label asp-for="NomeCliente" class="control-label"></label>
-                            <input asp-for="NomeCliente" class="form-control" />
-                            <span asp-validation-for="NomeCliente" class="text-danger"></span>
+                            <label asp-for="ClienteNome" class="control-label"></label>
+                            <input asp-for="ClienteNome" class="form-control" />
+                            <span asp-validation-for="ClienteNome" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="TelCliente" class="control-label"></label>
-                            <input asp-for="TelCliente" class="form-control" />
-                            <span asp-validation-for="TelCliente" class="text-danger"></span>
+                            <label asp-for="ClienteTel" class="control-label"></label>
+                            <input asp-for="ClienteTel" class="form-control" />
+                            <span asp-validation-for="ClienteTel" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label asp-for="CpfCliente" class="control-label"></label>
-                            <input asp-for="CpfCliente" class="form-control" />
-                            <span asp-validation-for="CpfCliente" class="text-danger"></span>
+                            <label asp-for="ClienteCPF" class="control-label"></label>
+                            <input asp-for="ClienteCPF" class="form-control" />
+                            <span asp-validation-for="ClienteCPF" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="EmailCliente" class="control-label"></label>
-                            <input asp-for="EmailCliente" class="form-control" />
-                            <span asp-validation-for="EmailCliente" class="text-danger"></span>
+                            <label asp-for="ClienteEmail" class="control-label"></label>
+                            <input asp-for="ClienteEmail" class="form-control" />
+                            <span asp-validation-for="ClienteEmail" class="text-danger"></span>
                         </div>
                     </div>
                 </div>
@@ -48,26 +48,26 @@
                 <div class="card-body row">
                     <div class="col-md">
                         <div class="form-group">
-                            <label asp-for="EmpreCliente" class="control-label"></label>
-                            <input asp-for="EmpreCliente" class="form-control" />
-                            <span asp-validation-for="EmpreCliente" class="text-danger"></span>
+                            <label asp-for="ClienteEmpre" class="control-label"></label>
+                            <input asp-for="ClienteEmpre" class="form-control" />
+                            <span asp-validation-for="ClienteEmpre" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="FunCliente" class="control-label"></label>
-                            <input asp-for="FunCliente" class="form-control" />
-                            <span asp-validation-for="FunCliente" class="text-danger"></span>
+                            <label asp-for="ClienteFunc" class="control-label"></label>
+                            <input asp-for="ClienteFunc" class="form-control" />
+                            <span asp-validation-for="ClienteFunc" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label asp-for="CNPJCliente" class="control-label"></label>
-                            <input asp-for="CNPJCliente" class="form-control" />
-                            <span asp-validation-for="CNPJCliente" class="text-danger"></span>
+                            <label asp-for="ClienteCNPJ" class="control-label"></label>
+                            <input asp-for="ClienteCNPJ" class="form-control" />
+                            <span asp-validation-for="ClienteCNPJ" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="SalarioCliente" class="control-label"></label>
-                            <input asp-for="SalarioCliente" class="form-control" />
-                            <span asp-validation-for="SalarioCliente" class="text-danger"></span>
+                            <label asp-for="ClienteSalario" class="control-label"></label>
+                            <input asp-for="ClienteSalario" class="form-control" />
+                            <span asp-validation-for="ClienteSalario" class="text-danger"></span>
                         </div>
                     </div>
                 </div>
@@ -78,26 +78,26 @@
                 <div class="card-body row">
                     <div class="col-md">
                         <div class="form-group">
-                            <label asp-for="RuaCliente" class="control-label"></label>
-                            <input asp-for="RuaCliente" class="form-control" />
-                            <span asp-validation-for="RuaCliente" class="text-danger"></span>
+                            <label asp-for="ClienteRua" class="control-label"></label>
+                            <input asp-for="ClienteRua" class="form-control" />
+                            <span asp-validation-for="ClienteRua" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="CidadeCliente" class="control-label"></label>
-                            <input asp-for="CidadeCliente" class="form-control" />
-                            <span asp-validation-for="CidadeCliente" class="text-danger"></span>
+                            <label asp-for="ClienteCidade" class="control-label"></label>
+                            <input asp-for="ClienteCidade" class="form-control" />
+                            <span asp-validation-for="ClienteCidade" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label asp-for="BairroCliente" class="control-label"></label>
-                            <input asp-for="BairroCliente" class="form-control" />
-                            <span asp-validation-for="BairroCliente" class="text-danger"></span>
+                            <label asp-for="ClienteBairro" class="control-label"></label>
+                            <input asp-for="ClienteBairro" class="form-control" />
+                            <span asp-validation-for="ClienteBairro" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="EstadoCliente" class="control-label"></label>
-                            <input asp-for="EstadoCliente" class="form-control" />
-                            <span asp-validation-for="EstadoCliente" class="text-danger"></span>
+                            <label asp-for="ClienteEstado" class="control-label"></label>
+                            <input asp-for="ClienteEstado" class="form-control" />
+                            <span asp-validation-for="ClienteEstado" class="text-danger"></span>
                         </div>
                     </div>
                 </div>

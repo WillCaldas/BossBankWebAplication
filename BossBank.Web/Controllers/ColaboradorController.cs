@@ -55,7 +55,7 @@ namespace BossBank.Web.Controllers
         public IActionResult Edit(Colaborador Model)
         {
             Colaborador thisColab = ServColab.RepColab.Update(Model);
-            int id = thisColab.IdColab;
+            int id = thisColab.ColaboradorId;
             return RedirectToAction("Details", new { id });
         }
 

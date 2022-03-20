@@ -13,22 +13,22 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.NomeColab)
+                @Html.DisplayNameFor(model => model.ColaboradorNome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CpfColab)
+                @Html.DisplayNameFor(model => model.ColaboradorCPF)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CargoColab)
+                @Html.DisplayNameFor(model => model.ColaboradorCargo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SetorColab)
+                @Html.DisplayNameFor(model => model.ColaboradorSetor)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.GestorColab)
+                @Html.DisplayNameFor(model => model.ColaboradorGestor)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SalarioColab)
+                @Html.DisplayNameFor(model => model.ColaboradorSalario)
             </th>
             <th></th>
         </tr>
@@ -38,33 +38,33 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.NomeColab)
+                    @Html.DisplayFor(modelItem => item.ColaboradorNome)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.CpfColab)
+                    @Html.DisplayFor(modelItem => item.ColaboradorCPF)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.CargoColab)
+                    @Html.DisplayFor(modelItem => item.ColaboradorCargo)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.SetorColab)
+                    @Html.DisplayFor(modelItem => item.ColaboradorSetor)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.GestorColab)
+                    @Html.DisplayFor(modelItem => item.ColaboradorGestor)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.SalarioColab)
+                    @Html.DisplayFor(modelItem => item.ColaboradorSalario)
                 </td>
                 <td class="row">
-                    <a asp-action="Edit" class="btn btn-success m-1" asp-route-id="@item.IdColab">Editar</a>
-                    <a asp-action="Details" class="btn btn-info m-1" asp-route-id="@item.IdColab">Detalhes</a>
+                    <a asp-action="Edit" class="btn btn-success m-1" asp-route-id="@item.ColaboradorId">Editar</a>
+                    <a asp-action="Details" class="btn btn-info m-1" asp-route-id="@item.ColaboradorId">Detalhes</a>
 
-                    <button type="button" class="btn btn-danger m-1" data-toggle="modal" data-target="#DeleteModal-@item.IdColab">
+                    <button type="button" class="btn btn-danger m-1" data-toggle="modal" data-target="#DeleteModal-@item.ColaboradorId">
                         Excluir
                     </button>
 
                     <!-- Modal -->
-                <div class="modal fade" id="DeleteModal-@item.IdColab" tabindex="-1" role="dialog" aria-labelledby="DeleteModalLabel" aria-hidden="true">
+                <div class="modal fade" id="DeleteModal-@item.ColaboradorId" tabindex="-1" role="dialog" aria-labelledby="DeleteModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -74,11 +74,11 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    Deseja realmente excluir o Colaborador @item.NomeColab ?
+                                    Deseja realmente excluir o Colaborador @item.ColaboradorNome ?
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
-                                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.IdColab">Sim</a>
+                                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.ColaboradorId">Sim</a>
                                 </div>
                             </div>
                         </div>
