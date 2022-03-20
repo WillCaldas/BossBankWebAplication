@@ -21,5 +21,18 @@ namespace BossBank.Data.Context
         {
             optionsBuilder.UseSqlite(b => b.MigrationsAssembly("BossBank.Web"));
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Endereco>()
+                .HasOne(end => end.Cliente)
+                .WithOne(cli => cli.Endereco)
+                .HasForeignKey<Cliente>(key => key.EnderecoId);
+
+            modelBuilder.Entity<Ocupacao>()
+                .HasOne(ocu => ocu.Cliente)
+                .WithOne(cli => cli.Ocupacao)
+                .HasForeignKey<Cliente>(key => key.OcupacaoId);
+        }
     }
 }

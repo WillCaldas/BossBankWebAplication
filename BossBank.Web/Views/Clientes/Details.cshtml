@@ -11,80 +11,80 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteNome)
+            @Html.DisplayNameFor(model => model.Nome)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteNome)
+            @Html.DisplayFor(model => model.Nome)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteCPF)
+            @Html.DisplayNameFor(model => model.CPF)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteCPF)
+            @Html.DisplayFor(model => model.CPF)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteTel)
+            @Html.DisplayNameFor(model => model.Tel)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteTel)
+            @Html.DisplayFor(model => model.Tel)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteEmail)
+            @Html.DisplayNameFor(model => model.Email)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteEmail)
+            @Html.DisplayFor(model => model.Email)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteEmpre)
+            @Html.DisplayNameFor(model => model.Ocupacao.Empresa)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteEmpre)
+            @Html.DisplayFor(model => model.Ocupacao.Empresa)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteCNPJ)
+            @Html.DisplayNameFor(model => model.Ocupacao.CNPJ)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteCNPJ)
+            @Html.DisplayFor(model => model.Ocupacao.CNPJ)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteFunc)
+            @Html.DisplayNameFor(model => model.Ocupacao.Funcao)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteFunc)
+            @Html.DisplayFor(model => model.Ocupacao.Funcao)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteSalario)
+            @Html.DisplayNameFor(model => model.Ocupacao.Salario)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteSalario)
+            @Html.DisplayFor(model => model.Ocupacao.Salario)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteRua)
+            @Html.DisplayNameFor(model => model.Endereco.Logradouro)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteRua)
+            @Html.DisplayFor(model => model.Endereco.Logradouro)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteBairro)
+            @Html.DisplayNameFor(model => model.Endereco.Bairro)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteBairro)
+            @Html.DisplayFor(model => model.Endereco.Bairro)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteCidade)
+            @Html.DisplayNameFor(model => model.Endereco.Cidade)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteCidade)
+            @Html.DisplayFor(model => model.Endereco.Cidade)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClienteEstado)
+            @Html.DisplayNameFor(model => model.Endereco.Numero)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClienteEstado)
+            @Html.DisplayFor(model => model.Endereco.Numero)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model.ClienteID">Editar</a>
+    <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model.Id">Editar</a>
     <a asp-action="Index" class="btn btn-primary">Voltar</a>
 </div>

@@ -38,7 +38,7 @@ namespace BossBank.Web.Controllers
         public IActionResult SearchCliente(string term)
         {
             var list = _cliente.GetAll();
-            var listName = list.Select(var => var.ClienteNome).ToList();
+            var listName = list.Select(var => var.Nome).ToList();
             var filtro = listName.Where(p => p.Contains(term, StringComparison.CurrentCultureIgnoreCase));
 
             return Json(filtro);

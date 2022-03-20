@@ -55,7 +55,7 @@ namespace BossBank.Web.Controllers
         public IActionResult Edit(Cliente Model)
         {
             Cliente thisCliente = ServCliente.RepCliente.Update(Model);
-            int id = thisCliente.ClienteID;
+            int id = thisCliente.Id;
             return RedirectToAction("Details", new { id });
         }
 
