@@ -13,9 +13,9 @@ namespace BossBank.Data.Context
         {
         }
 
-        public DbSet<Cliente> Cliente { get; set; }
-        public DbSet<Colaborador> Colaborador { get; set; }
-        public DbSet<ContaCorrente> ContaCorrente { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Colaborador> Colabs { get; set; }
+        public DbSet<ContaCorrente> ContasCC { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

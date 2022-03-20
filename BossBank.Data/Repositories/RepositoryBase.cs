@@ -9,21 +9,21 @@ namespace BossBank.Data.Repositories
 {
     public class RepositoryBase<T> : IRepositoryModel<T>, IDisposable where T : class
     {
-        protected BossBankDbContext _BossBankContexto;
+        protected BossBankDbContext _context;
         
 
         public RepositoryBase(BossBankDbContext context)
         {
             
-            _BossBankContexto = context;
+            _context = context;
         }
 
         public T Add(T item)
         {
-            _BossBankContexto.Set<T>().Add(item);
+            _context.Set<T>().Add(item);
 
             
-                _BossBankContexto.SaveChanges();
+                _context.SaveChanges();
             
 
             return item;
@@ -31,9 +31,9 @@ namespace BossBank.Data.Repositories
 
         public void Delete(T item)
         {
-            _BossBankContexto.Set<T>().Remove(item);
+            _context.Set<T>().Remove(item);
 
-            _BossBankContexto.SaveChanges();
+            _context.SaveChanges();
         }
 
         public void Delete(params object[] varT)
@@ -44,7 +44,7 @@ namespace BossBank.Data.Repositories
 
         public void Dispose()
         {
-            _BossBankContexto.Dispose();
+            _context.Dispose();
             Dispose(true);
             GC.SuppressFinalize(this);
         }
@@ -53,34 +53,34 @@ namespace BossBank.Data.Repositories
         {
             if (disposing)
             {
-                if (_BossBankContexto != null)
+                if (_context != null)
                 {
-                    _BossBankContexto.Dispose();
-                    _BossBankContexto = null;
+                    _context.Dispose();
+                    _context = null;
                 }
             }
         }
 
         public List<T> GetAll()
         {
-            return _BossBankContexto.Set<T>().ToList();
+            return _context.Set<T>().ToList();
         }
 
         public T GetPk(params object[] varT)
         {
-            return _BossBankContexto.Set<T>().Find(varT);
+            return _context.Set<T>().Find(varT);
         }
 
         public void SaveChanges()
         {
-            _BossBankContexto.SaveChanges();
+            _context.SaveChanges();
         }
 
         public T Update(T item)
         {
-            _BossBankContexto.Entry(item).State = EntityState.Modified;
+            _context.Entry(item).State = EntityState.Modified;
 
-            _BossBankContexto.SaveChanges();
+            _context.SaveChanges();
             return item;
         }
     }
