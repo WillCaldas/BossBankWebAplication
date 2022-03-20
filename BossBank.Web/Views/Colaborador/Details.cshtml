@@ -11,44 +11,32 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ColaboradorNome)
+            @Html.DisplayNameFor(model => model.Nome)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ColaboradorNome)
+            @Html.DisplayFor(model => model.Nome)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ColaboradorCPF)
+            @Html.DisplayNameFor(model => model.CPF)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ColaboradorCPF)
+            @Html.DisplayFor(model => model.CPF)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ColaboradorCargo)
+            @Html.DisplayNameFor(model => model.Gestor)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ColaboradorCargo)
+            @Html.DisplayFor(model => model.Gestor)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ColaboradorSetor)
+            @Html.DisplayNameFor(model => model.Salario)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ColaboradorSetor)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ColaboradorGestor)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ColaboradorGestor)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ColaboradorSalario)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ColaboradorSalario)
+            @Html.DisplayFor(model => model.Salario)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model.ColaboradorId">Editar</a>
+    <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model.Id">Editar</a>
     <a asp-action="Index" class="btn btn-primary">Voltar</a>
 </div>

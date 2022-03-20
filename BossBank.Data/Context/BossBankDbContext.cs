@@ -15,6 +15,7 @@ namespace BossBank.Data.Context
 
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Colaborador> Colabs { get; set; }
+        public DbSet<Gerente> Gerentes { get; set; }
         public DbSet<ContaCorrente> ContasCC { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -33,6 +34,12 @@ namespace BossBank.Data.Context
                 .HasOne(ocu => ocu.Cliente)
                 .WithOne(cli => cli.Ocupacao)
                 .HasForeignKey<Cliente>(key => key.OcupacaoId);
+
+            modelBuilder.Entity<ContaCorrente>()
+                .HasOne(cc => cc.Gerente)
+                .WithMany(g => g.ContaCorrentes)
+                .HasForeignKey(cc => cc.GerenteId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

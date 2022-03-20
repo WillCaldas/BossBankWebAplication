@@ -9,13 +9,11 @@ namespace BossBank.Data.Entities
 {
     public class Colaborador
     {
-        public int ColaboradorId { get; set; }
-        public string ColaboradorNome { get; set; }
-        public string ColaboradorCPF { get; set; }
-        public string ColaboradorCargo { get; set; }
-        public string ColaboradorSetor { get; set; }
-        public string ColaboradorGestor { get; set; }
-        public string ColaboradorSalario { get; set; }
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string CPF { get; set; }
+        public string Gestor { get; set; }
+        public string Salario { get; set; }
 
     }
 }
