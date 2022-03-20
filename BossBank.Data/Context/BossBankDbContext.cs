@@ -21,9 +21,5 @@ namespace BossBank.Data.Context
         {
             optionsBuilder.UseSqlite(b => b.MigrationsAssembly("BossBank.Web"));
         }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-        }
     }
 }
